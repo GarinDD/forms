@@ -53,7 +53,8 @@
 
     </form>
 
-    <textarea id="message" name="comment" id="" cols="30" rows="10" placeholder="Дополнительные пожелания повару и курьеру."></textarea>
+    <textarea id="message" name="comment" id="" cols="30" rows="10"
+        placeholder="Дополнительные пожелания повару и курьеру."></textarea>
 
 
 
@@ -78,10 +79,10 @@
             <input type="radio" value="rookie" id="rookie" name="chopsticks" />
             <label for="sticktype2">Учебные</label>
         </div>
-<div>
-    <label for="numberOfSticks" id="chopsticksNumber" name="chopstickNumber">Количество персон (1-6)</label>
-    <input type="number" id="chopstickNumber" name="chopstickNumber" min="1" max="6">
-</div>
+        <div>
+            <label for="numberOfSticks" id="chopsticksNumber" name="chopstickNumber">Количество персон (1-6)</label>
+            <input type="number" id="chopstickNumber" name="chopstickNumber" min="1" max="6">
+        </div>
 
     </fieldset>
     <div class="formrow">
@@ -96,27 +97,8 @@
             </select>
         </label>
     </div>
-    <div class="formrow">
-        <label>
-            <span>Genre:</span>
-            <input type="text" name="genre" id="userGenre" list="genreSuggestions">
-            <datalist id="genreSuggestions">
-                <option>Comedy</option>
-                <option>Horror</option>
-                <option>Drama</option>
-                <option>Thriller</option>
-                <option>Science Fiction</option>
-                <option>Fantasy</option>
-            </datalist>
-        </label>
-    </div>
-    <div class="formrow">
-        <input type="range" name="userRating" id="rating" min="1" max="5" step="1">
-        
-    </div>
 
-
-        <div class="formrow"> <input type="submit" value="Отправить"> </div>
+    <div class="formrow"> <input type="submit" value="Отправить"> </div>
 </body>
 
 </html>
