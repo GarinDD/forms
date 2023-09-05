@@ -15,7 +15,7 @@
 </style>
 
 <body>
-    <h2>Заказ</h2>
+    <h2>Заказ суши</h2>
     <form method="get" action="search.html">
         <div class="formrow">
             <label for="firstname">Имя:</label>
@@ -54,14 +54,7 @@
 
 
     <fieldset>
-        <div>
-           <p>Нужно ли класть салфетки? </p> 
-           <label for="npY">Да</label>
-            <input type="radio" value="yes" id="napkinsY" name="napkinsY" />
-            <label for="npN">Нет</label>
-            <input type="radio" value="no" id="napkinsN" name="napkinsN" />
-           
-        </div>
+      
         <div>
             <p>
                 Тип палочек:
@@ -72,8 +65,17 @@
             <label for="sticktype2">Учебные</label>
         </div>
         <div>
-            <label for="numberOfSticks" id="chopsticksNumber" name="chopstickNumber">Количество персон (1-6)</label>
+            <label for="numberOfSticks" id="chopsticksNumber" name="chopstickNumber">Количество пар палочек (1-6)</label>
             <input type="number" id="chopstickNumber" name="chopstickNumber" min="1" max="6">
+        </div>
+        <div>
+            <p>
+               Нужны ли салфетки?
+            </p>
+            <input type="radio" value="positive" id="napkinsY" name="napkins" />
+            <label for="napkinsY">Да</label>
+            <input type="radio" value="negative" id="napkinsN" name="napkins" />
+            <label for="napkinsN">Нет</label>
         </div>
 
     </fieldset>
