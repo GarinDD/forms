@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #username {
+        color: purple;
+        font-weight: bold;
+    }
+
+    #password {
+        color: antiquewhite;
+        font-weight: bold;
+    }
+
+    .formrow {
+        margin: 10px 5px;
+
+    }
+</style>
+
+<body>
+    <h2>Регистрация</h2>
+    <form method="get" action="search.html">
+        <div class="formrow">
+            <label for="firstname">Имя:</label>
+            <input type="text" required id="firstname" autocomplete="off" placeholder="Ваше имя" name="Имя">
+        </div>
+        <div class="formrow">
+            <label for="email">email</label>
+            <input type="email" id="email" placeholder="Ваша эл. почта" name="email">
+        </div>
+        <div class="formrow">
+            <label>
+                <span>Адрес</span>
+                <input type="text" name="address" id="Area" list="addressSuggestions">
+                <datalist id="addressSuggestions">
+                    <option>Выберите район и улицу</option>
+                    <option>Центральный</option>
+                    <option>Хостинский</option>
+                    <option>Лоо</option>
+                    <option>Лазаревский</option>
+                    <option>Адлер</option>
+                </datalist>
+            </label>
+        </div>
+
+
+    </form>
+
+    <textarea id="message" name="comment" id="" cols="30" rows="10" placeholder="Дополнительные пожелания повару и курьеру."></textarea>
+
+
+
+
+    <fieldset>
+        <legend>Нужно ли класть салфетки?</legend>
+        <div>
+            <input type="checkbox" id="napkinsYes" name="napkinsY">
+            <label for="napkinsYes">Да</label>
+        </div>
+        <div>
+            <input type="checkbox" id="napkinsNo" name="napkinsN" checked>
+            <label for="napkinsNo">Нет</label>
+        </div>
+
+        <div>
+            <p>
+                Тип палочек:
+            </p>
+            <input type="radio" value="regular" id="regular" name="chopsticks" />
+            <label for="sticktype1">Обычные</label>
+            <input type="radio" value="rookie" id="rookie" name="chopsticks" />
+            <label for="sticktype2">Учебные</label>
+        </div>
+<div>
+    <label for="numberOfSticks" id="chopsticksNumber" name="chopstickNumber">Количество персон (1-6)</label>
+    <input type="number" id="chopstickNumber" name="chopstickNumber" min="1" max="6">
+</div>
+
+    </fieldset>
+    <div class="formrow">
+        <label>
+            <span>Выберите блюдо:</span>
+            <select id="nameOfPizza" name="nameOfPizza">
+                <option value="">Не выбрано</option>
+                <option value="Cali">Калифорния</option>
+                <option value="Phily">Филадельфия</option>
+                <option value="Tempura">Тэмпура</option>
+                <option value="Sushimi">Сушими</option>
+            </select>
+        </label>
+    </div>
+    <div class="formrow">
+        <label>
+            <span>Genre:</span>
+            <input type="text" name="genre" id="userGenre" list="genreSuggestions">
+            <datalist id="genreSuggestions">
+                <option>Comedy</option>
+                <option>Horror</option>
+                <option>Drama</option>
+                <option>Thriller</option>
+                <option>Science Fiction</option>
+                <option>Fantasy</option>
+            </datalist>
+        </label>
+    </div>
+    <div class="formrow">
+        <input type="range" name="userRating" id="rating" min="1" max="5" step="1">
+        
+    </div>
+
+
+        <div class="formrow"> <input type="submit" value="Отправить"> </div>
+</body>
+
+</html>
+
+■ Имя;
+■ Адрес;
+■ Телефон;
+■ Email;
+■ Количество палочек;
+■ Вид палочек;
+■ Обычные;
+■ Учебные;
+■ Список для выбора суши;
+■ Нужно ли класть салфетки?
+■ Дополнительный комментарий
