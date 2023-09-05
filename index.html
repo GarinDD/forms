@@ -5,19 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>КликСуши</title>
 </head>
 <style>
-    #username {
-        color: purple;
-        font-weight: bold;
-    }
-
-    #password {
-        color: antiquewhite;
-        font-weight: bold;
-    }
-
     .formrow {
         margin: 10px 5px;
 
@@ -25,7 +15,7 @@
 </style>
 
 <body>
-    <h2>Регистрация</h2>
+    <h2>Заказ</h2>
     <form method="get" action="search.html">
         <div class="formrow">
             <label for="firstname">Имя:</label>
@@ -34,6 +24,10 @@
         <div class="formrow">
             <label for="email">email</label>
             <input type="email" id="email" placeholder="Ваша эл. почта" name="email">
+        </div>
+        <div class="formrow">
+            <label for="phone">Телефон</label>
+            <input type="phone" id="phone" placeholder="Ваш номер телефона" name="phone">
         </div>
         <div class="formrow">
             <label>
@@ -60,16 +54,14 @@
 
 
     <fieldset>
-        <legend>Нужно ли класть салфетки?</legend>
         <div>
-            <input type="checkbox" id="napkinsYes" name="napkinsY">
-            <label for="napkinsYes">Да</label>
+           <p>Нужно ли класть салфетки? </p> 
+           <label for="npY">Да</label>
+            <input type="radio" value="yes" id="napkinsY" name="napkinsY" />
+            <label for="npN">Нет</label>
+            <input type="radio" value="no" id="napkinsN" name="napkinsN" />
+           
         </div>
-        <div>
-            <input type="checkbox" id="napkinsNo" name="napkinsN" checked>
-            <label for="napkinsNo">Нет</label>
-        </div>
-
         <div>
             <p>
                 Тип палочек:
@@ -98,7 +90,7 @@
         </label>
     </div>
 
-    <div class="formrow"> <input type="submit" value="Отправить"> </div>
+    <div class="formrow"> <button type="submit" value="Заказать"> Заказать </button> </div>
 </body>
 
 </html>
